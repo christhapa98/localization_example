@@ -1,3 +1,22 @@
 {
-    "helloWorld": "Hello World!"
+    "language": "English",
+    "@language": {
+        "description": "The current language"
+    },
+    "helloWorld": "Hello World!",
+    "@helloWorld": {
+        "description": "A programmer greeting"
+    },
+    "personal_information": "Personal Information",
+    "name": "Sandesh Rijal",
+    "login_name": "Name",
+    "name_hint": "Enter your name",
+    "email": "Email",
+    "email_hint": "Enter your email",
+    "date_of_birth": "Date of Birth",
+    "date_of_birth_hint": "Enter your date of birth",
+    "submit_info": "Submit Info",
+    "home_page": "Go to Home Screen",
+    "about_us": "About Us",
+    "settings": "Settings"
 }
