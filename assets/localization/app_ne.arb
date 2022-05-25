@@ -1,3 +1,15 @@
 {
-    "helloWorld": "Namaste"
+    "language": "नेपाली",
+    "personal_information": "Personal Information",
+    "name": "सन्देश रिजाल",
+    "login_name": "नाम",
+    "name_hint": "नाम दर्ता गर्नुहोस्",
+    "email": "इमेल",
+    "email_hint": "इमेल दर्ता गर्नुहोस्",
+    "date_of_birth": "जन्ममिति",
+    "date_of_birth_hint": "जन्ममिति दर्ता गर्नुहोस्",
+    "submit_info": "विवरण बुझाउनुहोस्",
+    "home_page": "होम स्क्रीनमा जानुहोस्",
+    "about_us": "हाम्रो बारेमा",
+    "settings": "सेटिङ्स"
 }
