@@ -1,6 +1,8 @@
 {
     "language": "नेपाली",
-    "personal_information": "Personal Information",
+    "go_to_login_screen": "लगिन स्क्रीनमा जानुहोस्",
+    "login_screen": "लगिन स्क्रीन",
+    "personal_information": "व्यक्तिगत विवरण",
     "name": "सन्देश रिजाल",
     "login_name": "नाम",
     "name_hint": "नाम दर्ता गर्नुहोस्",
@@ -9,7 +11,7 @@
     "date_of_birth": "जन्ममिति",
     "date_of_birth_hint": "जन्ममिति दर्ता गर्नुहोस्",
     "submit_info": "विवरण बुझाउनुहोस्",
-    "home_page": "होम स्क्रीनमा जानुहोस्",
+    "go_to_home_screen": "होम स्क्रीनमा जानुहोस्",
     "about_us": "हाम्रो बारेमा",
     "settings": "सेटिङ्स"
 }

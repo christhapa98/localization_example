@@ -14,15 +14,15 @@ class LoginScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Login Screen'),
+        title: Text(AppLocalizations.of(context)!.login_screen),
       ),
       body: Center(
         child: ListView(
           padding: const EdgeInsets.all(20),
           children: <Widget>[
-            const Text(
-              'Personal Information',
-              style: TextStyle(
+            Text(
+              AppLocalizations.of(context)!.personal_information,
+              style: const TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
               ),
@@ -59,7 +59,7 @@ class LoginScreen extends StatelessWidget {
               height: 40,
             ),
             ElevatedButton(
-              child: Text(AppLocalizations.of(context)!.home_page),
+              child: Text(AppLocalizations.of(context)!.go_to_home_screen),
               onPressed: () {
                 Navigator.pushAndRemoveUntil(
                     context,

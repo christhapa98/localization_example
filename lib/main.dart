@@ -4,6 +4,7 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:localization_sample/constants/l10n.dart';
 import 'package:localization_sample/login_screen.dart';
 import 'package:localization_sample/providers/locale_provider.dart';
+import 'package:localization_sample/services/shared_preferences_services.dart';
 import 'package:localization_sample/widgets/language_widget.dart';
 import 'package:provider/provider.dart';
 
@@ -16,8 +17,25 @@ void main() {
   );
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({Key? key}) : super(key: key);
+
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  _checkLocale() async {
+    Locale locale = await LocalePreference().getLocale();
+    context.read<LocaleProvider>().setLocale(locale);
+  }
+
+  @override
+  void initState() {
+    _checkLocale();
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     final localeProvider = Provider.of<LocaleProvider>(context);
@@ -71,7 +89,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 height: 20,
               ),
               ElevatedButton(
-                child: const Text('Go to Login Screen'),
+                child: Text(AppLocalizations.of(context)!.go_to_login_screen),
                 onPressed: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => LoginScreen()));
